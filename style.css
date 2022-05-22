@@ -160,7 +160,7 @@ input::placeholder {
   max-width: 2.5rem;
   padding: 0.2rem;
   position: absolute;
-  transform: translate(1.5rem, -3rem);
+  transform: translate(-27rem);
   filter: invert(63%) sepia(1%) saturate(3576%) hue-rotate(1deg) brightness(80%)
     contrast(51%);
 }
@@ -262,6 +262,12 @@ main {
       display: contents;
       font-size: 2rem;
 
+  }
+  label{
+      display: none;
+  }
+  span.input{
+      display:none;
   }
 
 }
