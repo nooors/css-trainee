@@ -18,7 +18,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 1rem;
+  padding: 0rem 1.5rem;
   background-color: rgb(0, 0, 0);
 }
 
@@ -49,6 +49,7 @@ header i {
   width: auto;
   background-color: gray;
   padding: 0 0.75rem;
+  margin-top: 10px
 }
 .title {
   display: flex;
@@ -120,56 +121,58 @@ figure {
 /* Register form */
 .register {
   position: absolute;
-  width: 80%;
+  top: 83%;
   left: 50%;
-  bottom: 0%;
   transform: translate(-50%);
-  color: white;
-  font-family: "Cabe Rawit", sans-serif;
-  background-color: blue;
+  width: 80%;
   display: flex;
   justify-content: center;
-  align-content: center;
+  background-color: #040275;
+  color: white;
+  padding: 1rem;
+  font-family: "Cabe Rawit", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  opacity: .7;
+  border-radius: .75rem;
 }
 
 .register h2 {
   display: none;
 }
 
-/* .register label {
-    display: none;
-} */
+#envelope{
+  display: none;
+}
+
 form {
   width: 85%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+
 }
 
 .input-group {
-  display: flex;
-  flex-flow: column wrap;
+  display:flex;
+  flex-direction: column;
+
 }
 input,
 .input-dog input,
 .input-email input {
-  height: auto;
-  width: 80%;
-  margin-bottom: 0.5rem;
-  border: 0;
-  padding: 0.5rem;
-  background-color: wheat;
-  border-radius: 0.2rem;
+ 
   position: relative;
+  width: 15rem;
+  height: 2rem;
 }
 
 input.input-dog{
-    margin-top: 12px
+ margin-top: 17px;  
 }
 
 input.span{
-  margin: 0;
-  padding: 0;
+
 }
 
 input::placeholder {
@@ -202,6 +205,7 @@ button {
   border: 0;
   /* padding: 0.1rem; */
   width: 15rem;
+  height: 2rem;
 }
 
 main {
@@ -298,6 +302,7 @@ main {
     font-family: "Cabe Rawit", sans-serif;
     padding: 0.25rem 1.25rem;
     background-color: rgb(0, 0, 0);
+    border-radius: 0;
   }
 
   .register h2 {
@@ -353,6 +358,7 @@ main {
   }
 
   #envelope {
+    display: inline;
     color: gray;
     font-size: 2rem;
     position: absolute;
