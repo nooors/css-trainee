@@ -171,10 +171,6 @@ input.input-dog{
  margin-top: 17px;  
 }
 
-input.span{
-
-}
-
 input::placeholder {
   color: gray;
   padding-left: 4rem;
