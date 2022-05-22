@@ -123,6 +123,7 @@ figure {
   position: absolute;
   width: 80%;
   left: 50%;
+  bottom: 0%;
   transform: translate(-50%);
   color: white;
   font-family: "Cabe Rawit", sans-serif;
@@ -153,9 +154,8 @@ form {
 input,
 .input-dog input,
 .input-email input {
-  height: 2rem;
-  width: 15rem;
-  align-items: baseline;
+  height: auto;
+  width: 100%;
   margin-bottom: 0.5rem;
   border: 0;
   padding: 0.5rem;
@@ -164,8 +164,13 @@ input,
   position: relative;
 }
 
-.input-dog input{
-    margin-top: 5px
+input.input-dog{
+    margin-top: 12px
+}
+
+input.span{
+  margin: 0;
+  padding: 0;
 }
 
 input::placeholder {
@@ -196,7 +201,7 @@ button {
   color: wheat;
   background-color: rgb(153, 183, 52);
   border: 0;
-  padding: 0.1rem;
+  /* padding: 0.1rem; */
   width: 15rem;
 }
 
@@ -286,6 +291,10 @@ main {
 
   /* Register form */
   .register {
+    position: relative;
+    width: 100%;
+    left: 0;
+    transform: none;
     color: white;
     font-family: "Cabe Rawit", sans-serif;
     padding: 0.25rem 1.25rem;
@@ -300,12 +309,18 @@ main {
     letter-spacing: 0.25vw;
   }
 
+  form{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+  }
+
   /* .register label {
       display: none;
   } */
   input,
-  input-dog,
-  input-email {
+  input.input-dog,
+  input.input-email {
     width: 100%;
     margin-bottom: 0.5rem;
     border: 0;
@@ -316,16 +331,24 @@ main {
     position: relative;
   }
 
+  input.input-dog{
+    margin-top: 0
+  }
+
   input::placeholder {
     color: gray;
     padding-left: 4rem;
+  }
+
+  .input-group{
+    width: 100%;
   }
 
   .img-dog {
     max-width: 2.5rem;
     padding: 0.2rem;
     position: absolute;
-    transform: translate(-27rem);
+    transform: translate(-12rem, -.3rem);
     filter: invert(63%) sepia(1%) saturate(3576%) hue-rotate(1deg)
       brightness(80%) contrast(51%);
   }
@@ -334,7 +357,7 @@ main {
     color: gray;
     font-size: 2rem;
     position: absolute;
-    transform: translate(1.5rem, -2.75rem);
+    transform: translate(-12rem, -2.90rem);
   }
 
   button {
