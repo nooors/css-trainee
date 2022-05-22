@@ -19,59 +19,57 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   background-color: rgb(0, 0, 0);
 }
 
 header i {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .nav-mobile {
-    display: none;
+  display: none;
 }
 
-.nav-desktop{
-    display: flex;
-    
+.nav-desktop {
+  display: flex;
 }
 
-.nav-icon{
-    font-size: 1.5rem;
-    border-left: 1px solid wheat;
-    padding: .75rem
+.nav-icon {
+  font-size: 1.5rem;
+  border-left: 1px solid wheat;
+  padding: 0.75rem;
 }
-.nav-text{
-    font-size: 2rem;
-    padding: .75rem;
-    border-left: 1px solid wheat;
-    border-right: 1px solid wheat;
-    
+.nav-text {
+  font-size: 2rem;
+  padding: 0.75rem;
+  border-left: 1px solid wheat;
+  border-right: 1px solid wheat;
 }
 .nav-button {
-    width: auto;
-    background-color: gray;
-    padding: 0 .75rem
+  width: auto;
+  background-color: gray;
+  padding: 0 0.75rem;
 }
 .title {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    font-size: 2.5rem;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  font-size: 2.5rem;
 }
 
 .title img {
-    width: 2rem;
-    margin-right: 0.5rem;
+  width: 2rem;
+  margin-right: 0.5rem;
 }
 
 .sign-desktop {
-    font-size: 2rem;
-    padding: .75rem;
-    border-left: 1px solid wheat;
+  font-size: 2rem;
+  padding: 0.75rem;
+  border-left: 1px solid wheat;
 }
-.sign-mobile{
-    display: none;
+.sign-mobile {
+  display: none;
 }
 
 /* banner */
@@ -80,6 +78,7 @@ header i {
   color: white;
   font-family: "Cabe Rawit", sans-serif;
   background-color: rgb(0, 0, 0);
+  position: relative;
 }
 
 figure {
@@ -111,44 +110,62 @@ figure {
 
 .banner__text__lowercase {
   color: white;
-  font-size: 5vw;
+  font-size: 3vw;
 }
 
 .banner__text__uppercase {
   color: white;
-  font-size: 18vw;
+  font-size: 16vw;
 }
 
 /* Register form */
 .register {
+  position: absolute;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%);
   color: white;
   font-family: "Cabe Rawit", sans-serif;
-  padding: 0.25rem 1.25rem;
-  background-color: rgb(0, 0, 0);
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .register h2 {
-    font-size: 4vh;
-  text-align: center;
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.25vw;
+  display: none;
 }
 
 /* .register label {
     display: none;
 } */
+form {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  flex-flow: column wrap;
+}
 input,
-input-dog,
-input-email {
-  width: 100%;
+.input-dog input,
+.input-email input {
+  height: 2rem;
+  width: 15rem;
+  align-items: baseline;
   margin-bottom: 0.5rem;
   border: 0;
   padding: 0.5rem;
   background-color: wheat;
   border-radius: 0.2rem;
-  font-size: 2.5vh;
   position: relative;
+}
+
+.input-dog input{
+    margin-top: 5px
 }
 
 input::placeholder {
@@ -160,7 +177,7 @@ input::placeholder {
   max-width: 2.5rem;
   padding: 0.2rem;
   position: absolute;
-  transform: translate(-27rem);
+  transform: translate(-76rem);
   filter: invert(63%) sepia(1%) saturate(3576%) hue-rotate(1deg) brightness(80%)
     contrast(51%);
 }
@@ -173,17 +190,15 @@ input::placeholder {
 }
 
 button {
-  width: 100%;
   font-family: "Cabe Rawit", sans-serif;
-  font-size: 2rem;
+  font-size: 1.75rem;
   border-radius: 0.2rem;
   color: wheat;
   background-color: rgb(153, 183, 52);
-  margin: 0 0 0.5rem 0;
   border: 0;
-  padding: 0.3rem;
+  padding: 0.1rem;
+  width: 15rem;
 }
-
 
 main {
   width: 100vw;
@@ -249,27 +264,90 @@ main {
   .nav-mobile {
     display: contents;
   }
-  
+
   .nav-desktop {
+    display: none;
+  }
+
+  .sign-desktop {
+    display: none;
+  }
+
+  .sign-mobile {
+    display: contents;
+    font-size: 2rem;
+  }
+  label {
+    display: none;
+  }
+  span.input {
+    display: none;
+  }
+
+  /* Register form */
+  .register {
+    color: white;
+    font-family: "Cabe Rawit", sans-serif;
+    padding: 0.25rem 1.25rem;
+    background-color: rgb(0, 0, 0);
+  }
+
+  .register h2 {
+    font-size: 4vh;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25vw;
+  }
+
+  /* .register label {
       display: none;
+  } */
+  input,
+  input-dog,
+  input-email {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    border: 0;
+    padding: 0.5rem;
+    background-color: wheat;
+    border-radius: 0.2rem;
+    font-size: 2.5vh;
+    position: relative;
   }
 
-  .sign-desktop{
-      display: none;
+  input::placeholder {
+    color: gray;
+    padding-left: 4rem;
   }
 
-  .sign-mobile{
-      display: contents;
-      font-size: 2rem;
-
-  }
-  label{
-      display: none;
-  }
-  span.input{
-      display:none;
+  .img-dog {
+    max-width: 2.5rem;
+    padding: 0.2rem;
+    position: absolute;
+    transform: translate(-27rem);
+    filter: invert(63%) sepia(1%) saturate(3576%) hue-rotate(1deg)
+      brightness(80%) contrast(51%);
   }
 
+  #envelope {
+    color: gray;
+    font-size: 2rem;
+    position: absolute;
+    transform: translate(1.5rem, -2.75rem);
+  }
+
+  button {
+    width: 100%;
+    font-family: "Cabe Rawit", sans-serif;
+    font-size: 2rem;
+    border-radius: 0.2rem;
+    color: wheat;
+    background-color: rgb(153, 183, 52);
+    margin: 0 0 0.5rem 0;
+    border: 0;
+    padding: 0.3rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
