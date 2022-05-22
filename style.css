@@ -141,7 +141,7 @@ figure {
     display: none;
 } */
 form {
-  width: 80%;
+  width: 85%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -155,7 +155,7 @@ input,
 .input-dog input,
 .input-email input {
   height: auto;
-  width: 100%;
+  width: 80%;
   margin-bottom: 0.5rem;
   border: 0;
   padding: 0.5rem;
