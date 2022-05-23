@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Cabe Rawit';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cabe Rawit'), url('./assets/cabe-rawit-cdnfonts/CabeRawit-Regular.woff') format('woff');
+}
 
 * {
   padding: 0;
